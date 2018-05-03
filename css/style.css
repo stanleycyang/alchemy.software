@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   background: #191919;
 }
@@ -5,20 +9,17 @@ body {
 .title {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  margin: 35px 0;
+  font-size: 1.2rem;
+  margin: 20px auto;
   line-height: 2;
+  max-width: 90%;
 }
 
 .subtitle {
   color: #ffffff;
   font-family: 'Inconsolata', monospace;
-  font-size: 16px;
+  font-size: .825rem;
   text-transform: uppercase;
-}
-
-.line {
-  display: block;
 }
 
 .content {
@@ -28,14 +29,16 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   pointer-events: none;
+  padding: 20px;
+  width: calc(100% - 40px);
 }
 
 .email {
   text-align: center;
   height: 50px;
-  width: 600px;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
+  font-size: 1.2rem;
   background: none;
   outline: none;
   border: none;
@@ -44,6 +47,65 @@ body {
 }
 
 .email::placeholder {
-    color: #757575;
-    opacity: 1;
+  color: #757575;
+  opacity: 1;
+}
+
+.field-group {
+  position: relative;
+}
+
+.msg {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+  max-width: 580px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: .825rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.msg a {
+  color: #ffffff;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 2rem;
+    margin: 35px 0;
+    max-width: none;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .email {
+    font-size: 2rem;
+    width: 600px;
+  }
+
+  .msg {
+    font-size: 1rem;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .content {
+    width: auto;
+  }
 }
