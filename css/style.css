@@ -1,0 +1,47 @@
+body {
+  background: #191919;
+}
+
+.title {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin: 35px 0;
+  line-height: 2;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.line {
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.email {
+  text-align: center;
+  height: 50px;
+  width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+.email::placeholder {
+    color: #757575;
+    opacity: 1;
+}
