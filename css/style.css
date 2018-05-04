@@ -71,6 +71,7 @@ body {
 
 .msg a {
   color: #ffffff;
+  pointer-events: all;
 }
 
 #particles-js {
