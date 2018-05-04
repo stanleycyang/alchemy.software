@@ -1,15 +1,9 @@
 $(document).ready(function() {
 
-  var $window = $(window);
   var $form = $('form');
   var $emailInput = $('#mce-EMAIL');
 
-  var particlePath = $window.width() >= 1024 ? '/assets/particles.json' : '/assets/particles-mobile.json';
-  particlesJS.load('particles-js', particlePath);
-
-  if ($window.width() >= 1024) {
-    $emailInput.focus();
-  }
+  particlesJS.load('particles-js', '/assets/particles.json');
 
   $emailInput.click(function() {
     $(this).attr('placeholder', '');
@@ -17,9 +11,6 @@ $(document).ready(function() {
 
   $emailInput.blur(function() {
     $(this).attr('placeholder', 'Get notified');
-    if ($window.width() >= 1024) {
-      $emailInput.focus();
-    }
   });
 
   $emailInput.keypress(function(event) {

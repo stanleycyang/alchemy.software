@@ -107,5 +107,6 @@ body {
 
   .content {
     width: auto;
+    min-width: 660px;
   }
 }
